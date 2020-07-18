@@ -12,7 +12,6 @@ export const register = async (
     }
     const body = await request.body();
     const data: any = await body.value;
-    console.log(data);
 
     if (!data.username || !data.password) {
       response.status = 400;

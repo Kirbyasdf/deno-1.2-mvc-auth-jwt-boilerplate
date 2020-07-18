@@ -1,12 +1,12 @@
 import { Client } from "../deps.ts";
+import { DB, DB_USER, DB_PORT, DB_HOST } from "../config.ts";
 
 class Database {
   client: Client = new Client({
-    database: "pgadminTest",
-    user: "postgres",
-    password: "123456",
-    hostname: "localhost",
-    port: 5432,
+    database: DB,
+    user: DB_USER,
+    hostname: DB_HOST,
+    port: +DB_PORT,
   });
   constructor() {
     this.connect();
