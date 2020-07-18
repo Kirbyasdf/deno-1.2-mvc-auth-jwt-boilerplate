@@ -14,7 +14,15 @@ Trying to determine best practice for deno w/ File organization
 
 -handle state of ctx better... I feel there is vulenabilities I didnt consider and edge cases where state.user would not be null by accident and grant auth to bad reqs.
 
+** this repo assumed you know how to set up a database  with postgres containing the following schema.... 
 
+```
+CREATE TABLE user_table(
+  id    SERIAL PRIMARY KEY,
+  username  TEXT UNIQUE NOT NULL ,
+  pw_hash TEXT,
+);
+```
 
 
 ## TO START
