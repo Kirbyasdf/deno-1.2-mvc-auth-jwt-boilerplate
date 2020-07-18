@@ -21,7 +21,7 @@ Trying to determine best practice for deno w/ File organization
 
 -> deno run --allow-net --allow-env --unstable server.ts
 
-## OR
+## OR (if you have denon installed)
 
 -> denon start server.ts
 
