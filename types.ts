@@ -4,5 +4,4 @@ export interface User {
   password: string;
   pw_hash: string;
   createdAt: string;
-  is_admin: boolean;
 }

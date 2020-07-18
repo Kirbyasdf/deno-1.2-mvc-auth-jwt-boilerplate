@@ -7,11 +7,9 @@ import {
   privateAction,
 } from "../controllers/auth.controller.ts";
 
-const BASE_URL = "/auth";
+export const authRouter = new Router({ prefix: "/auth" });
 
-export const authRouter = new Router();
+authRouter.post("/login", login);
+authRouter.post("/register", register);
 
-authRouter.post(BASE_URL + "/login", login);
-authRouter.post(BASE_URL + "/register", register);
-
-authRouter.get(BASE_URL + "/privateRoute", authHandler, privateAction);
+authRouter.get("/privateroute", authHandler, privateAction);

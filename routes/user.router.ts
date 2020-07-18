@@ -5,10 +5,8 @@ import {
   getUsers,
 } from "../controllers/user.controller.ts";
 
-const BASE_URL = "/users";
+export const userRouter = new Router({ prefix: "/users" });
 
-export const userRouter = new Router();
+userRouter.get("/", getUsers);
 
-userRouter.get(BASE_URL, getUsers);
-
-userRouter.get(BASE_URL + "/:id", getUser);
+userRouter.get("/:id", getUser);

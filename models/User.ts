@@ -76,8 +76,7 @@ export class UserRepo {
   }
 
   static async selectById(id: string) {
-    const text =
-      "SELECT id, is_admin, username, created_at, updated_at FROM users WHERE id = $1";
+    const text = "SELECT id, username FROM users WHERE id = $1";
     const values = [id];
     const result = await client.query({ text, args: values });
     return result.rowsOfObjects()[0];

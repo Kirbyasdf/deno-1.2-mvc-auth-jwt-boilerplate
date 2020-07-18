@@ -17,4 +17,4 @@ export {
   Jose,
   Payload,
 } from "https://deno.land/x/djwt/create.ts";
-export { validateJwt } from "https://deno.land/x/djwt/validate.ts";
+export { validateJwt, Opts } from "https://deno.land/x/djwt/validate.ts";
