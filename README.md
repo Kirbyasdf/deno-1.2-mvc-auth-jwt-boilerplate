@@ -14,16 +14,14 @@ Trying to determine best practice for deno w/ File organization
 
 -handle state of ctx better... I feel there is vulenabilities I didnt consider and edge cases where state.user would not be null by accident and grant auth to bad reqs.
 
-** TODO
 
-implement .env and denon (nodemon =)
-
-deno-mvc-auth-boilerplate
-Deno - auth using Oak, djwt, bcrypt, postgres
 
 
 TO START
+
 -> deno run --allow-net --allow-env --unstable server.ts
+##OR
+-> denon start server.ts
 
 ## denon start server.ts
 
