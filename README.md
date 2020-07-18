@@ -17,14 +17,15 @@ Trying to determine best practice for deno w/ File organization
 
 
 
-TO START
+## TO START
 
 -> deno run --allow-net --allow-env --unstable server.ts
-##OR
+
+## OR
+
 -> denon start server.ts
 
-## denon start server.ts
-
+-----------------
 -Post paths
 
 http://localhost:4000/auth/register
