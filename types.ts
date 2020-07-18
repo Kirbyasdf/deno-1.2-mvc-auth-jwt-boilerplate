@@ -3,5 +3,4 @@ export interface User {
   username: string;
   password: string;
   pw_hash: string;
-  createdAt: string;
 }
